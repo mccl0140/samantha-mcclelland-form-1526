@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    max-width: 50rem;
+}
+
+form {
+    align-items: center;
+}
+
+.entry {
+    font-family: 'Arial', 'Helvetica', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: auto;
+}
+
+.box {
+    background-color: #F5F5F5;
+    border: 2px solid #DDD;
+}
+
+legend {
+    font-family: 'Arial', 'Helvetica', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: black;
+    border: 2px solid #DDD;
+    text-decoration: none;
+    background-color: white;
+    padding: 3%;
+
+}
+
+input[type=text],
+textarea {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+#submit {
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Arial', 'Helvetica', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: #6495ed;
+    margin: 5px;
+    cursor: pointer;
+    width: 100%;
+    border-style: none;
+
+}
+
+#fullname,
+#email,
+#message {
+    border: 2px solid #DDD;
+    border-radius: 4px;
+    padding: 8px;
+    height: 3em;
+}
+
+/*Desktop*/
+@media(min-width: 50rem) {
+    .flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #email,
+    #fullname {
+        width: 22.5rem;
+    }
+
+    #submit {
+        width: 10rem;
+    }
+}
